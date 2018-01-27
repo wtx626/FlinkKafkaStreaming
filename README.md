@@ -45,6 +45,6 @@ docker exec -t -i "$JOBMANAGER_CONTAINER" flink run /job.jar
 ```
 将上述脚本保存为submitjob.sh，打包之后的flink jar包为bigdataflink-1.0-SNAPSHOT-jar-with-dependencies.jar，使用下面脚本提交作业
 ```bash
-./submitjob.sh bigdataflink-1.0-SNAPSHOT-jar-with-dependencies.jar
+./submitjob.sh /path/to/bigdataflink-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 
