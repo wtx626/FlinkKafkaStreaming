@@ -36,6 +36,7 @@ docker-compose up -d
 docker-compose scale taskmanager=<N>
 ```
 **提交作业**
+
 将打包好的jar包放在某个目录下运行下列脚本提交作业
 ```bash
 JOBMANAGER_CONTAINER=$(docker ps --filter name=jobmanager --format={{.ID}})
